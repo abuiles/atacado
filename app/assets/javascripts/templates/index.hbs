@@ -1,0 +1,38 @@
+<h1>Atacado</h1>
+<div>
+  <label>Peso (gr):</label>
+  {{input type="text" value=weight placeholder="Peso (gr)"}}
+</div>
+<div class="text">
+  <h1>Peso {{weight}} </h1>
+</div>
+
+<div>
+  <label>Teór (mm):</label>
+  {{input type="text" value=goldContent placeholder="Teór (mm)"}}
+</div>
+<div class="text">
+  <h1>Teor  {{goldContent}} </h1>
+</div>
+
+<div>
+  {{view Ember.Select
+       contentBinding="colors"
+       valueBinding="color"
+  }}
+</div>
+
+<div class="text">
+  <h1>Color: {{color}} </h1>
+</div>
+
+<div>
+  <label>
+    <h1> Verniz</h1>
+    {{view Ember.Checkbox checkedBinding="protector"}}
+  </label>
+</div>
+
+<div class="text">
+  <h1>Preço: {{price}} </h1>
+</div>
