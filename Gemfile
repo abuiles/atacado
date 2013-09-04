@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.0.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
@@ -49,3 +51,4 @@ gem "ember-source", "~> 1.0.0"
 
 gem "therubyracer"
 gem 'twitter-bootstrap-rails'
+gem 'rails_12factor', group: :production
