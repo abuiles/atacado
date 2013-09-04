@@ -46,3 +46,6 @@ end
 
 gem 'ember-rails'
 gem "ember-source", "~> 1.0.0"
+
+gem "therubyracer"
+gem 'twitter-bootstrap-rails'
