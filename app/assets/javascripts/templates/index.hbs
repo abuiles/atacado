@@ -1,6 +1,5 @@
 <h1>Serviço de Folheado a ouro Ipanema</h1>
-<p>Banhamos sua mercadoria Bruta com os milésimos e cor da sua preferência
-Também temos venda de peças brutas e folheadas!</p>
+<p>Banhamos sua mercadoria Bruta com os milésimos e cor da sua preferência<br>Também temos venda de peças brutas e folheadas!</p>
 <div>
   <label>Peso (gr):</label>
   {{input type="text" value=weight placeholder="Peso (gr)"}}
@@ -29,11 +28,11 @@ Também temos venda de peças brutas e folheadas!</p>
   <h1>Preço: {{price}} </h1>
 </div>
 
-<p>Para maiores informações, envie-nos seus dados e entraremos em contato o mais rápido possível!</p>
 
 {{#if submitted }}
   <h2> Obrigado! Entraremos em contato em breve</h2>
 {{else}}
+<h4>Para maiores informações, envie-nos seus dados e entraremos em contato o mais rápido possível!</h4>
   <div class="input string">
     <label>Nome</label>
     {{view Ember.TextField valueBinding='client.name' name='name' viewName='nameField'}}
@@ -51,14 +50,9 @@ Também temos venda de peças brutas e folheadas!</p>
     <button class="btn btn-large btn-primary" {{action save}}>Enviar</button>
   </div>
 {{/if}}
-<p>Você também pode nos contatar através do e-mail <a href="mailto:contato@ipmfl.com">contato@ipmfl.com</a> ou no telefone +55 19 34447832
+<h5>Você também pode nos contatar através do e-mail <a href="mailto:contato@ipmfl.com">contato@ipmfl.com</a> ou no telefone +55 19 34447832</h5>
 
 <div class=footer>
-  <h3> Endereço Ipanema Folheados</h3>
-  <p>Ipanema Folheados
-      Avenida Ambrósio Fumagalli, 1735
-      Limeira-SP
-      13485-333
-      Brasil
-  </p>    
+  <h3>Endereço Ipanema Folheados</h3>
+  <p>Ipanema Folheados<br>Avenida Ambrósio Fumagalli, 1735<br>Limeira-SP<br>13485-333<br>Brasil</p>    
 </div>
