@@ -1,11 +1,11 @@
-<h1>Atacado Joias</h1>
+<h1>Folheação a ouro Ipanema Folheados</h1>
 <div>
   <label>Peso (gr):</label>
   {{input type="text" value=weight placeholder="Peso (gr)"}}
 </div>
 
 <div>
-  <label>Teór (mm):</label>
+  <label>Teor (mm):</label>
   {{input type="text" value=goldContent placeholder="Teór (mm)"}}
 </div>
 
@@ -28,19 +28,19 @@
 </div>
 
 {{#if submitted }}
-  <h2> Obrigado! Um representante entrará en contacto</h2>
+  <h2> Obrigado! Entraremos em contato o mais rápido possível!</h2>
 {{else}}
   <div class="input string">
     <label>Nome</label>
     {{view Ember.TextField valueBinding='client.name' name='name' viewName='nameField'}}
   </div>
   <div class="input string">
-    <label>Telefono</label>
+    <label>E-mail</label>
     {{view Ember.TextField valueBinding='client.phone_number' name='phone_number' viewName='phoneNumberField'}}
   </div>
 
   <div class="input string">
-    <label>Telefono</label>
+    <label>Telefone</label>
     {{view Ember.TextField valueBinding='client.email' name='email' viewName='emailField'}}
   </div>
   <div class="form-actions">
