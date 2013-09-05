@@ -14,8 +14,10 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require turbolinks
+//= require underscore-min
 //= require handlebars
 //= require ember
+//= require ember-data-latest
 //= require_self
 //= require atacado
 // for more details see: http://emberjs.com/guides/application/

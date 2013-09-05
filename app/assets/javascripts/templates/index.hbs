@@ -26,3 +26,24 @@
 <div class="text">
   <h1>Preço: {{price}} </h1>
 </div>
+
+{{#if submitted }}
+  <h2> Obrigado! Um representante entrará en contacto</h2>
+{{else}}
+  <div class="input string">
+    <label>Nome</label>
+    {{view Ember.TextField valueBinding='client.name' name='name' viewName='nameField'}}
+  </div>
+  <div class="input string">
+    <label>Telefono</label>
+    {{view Ember.TextField valueBinding='client.phone_number' name='phone_number' viewName='phoneNumberField'}}
+  </div>
+
+  <div class="input string">
+    <label>Telefono</label>
+    {{view Ember.TextField valueBinding='client.email' name='email' viewName='emailField'}}
+  </div>
+  <div class="form-actions">
+    <button class="btn btn-large btn-primary" {{action save}}>Enviar</button>
+  </div>
+{{/if}}
