@@ -55,4 +55,4 @@ gem "therubyracer"
 gem 'twitter-bootstrap-rails'
 gem 'rails_12factor', group: :production
 gem 'pg'
-gem 'activeadmin'
+gem 'activeadmin', github: 'gregbell/active_admin', branch: 'rails4'
