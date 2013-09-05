@@ -1,7 +1,7 @@
 Atacado.Quote = Ember.Object.extend
   _MO: 0.3
   _VE: 0.07
-  _VO: 100.0
+  _VO: Atacado._VO
   weight: 0
   goldContent: 0
   protector: true
