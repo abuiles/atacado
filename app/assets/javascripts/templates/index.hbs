@@ -1,5 +1,6 @@
 <h1>Serviço de Folheado a ouro Ipanema</h1>
 <h2>Banhamos sua mercadoria Bruta com os milésimos e cor da sua preferência<br>Também temos venda de peças brutas e folheadas!</h2>
+
 <div>
   <label>Peso (gr):</label>
   {{input type="text" value=weight placeholder="Peso (gr)"}}
@@ -41,7 +42,6 @@
     <label>E-mail</label>
     {{view Ember.TextField valueBinding='client.phone_number' name='phone_number' viewName='phoneNumberField'}}
   </div>
-
   <div class="input string">
     <label>Telefone</label>
     {{view Ember.TextField valueBinding='client.email' name='email' viewName='emailField'}}
