@@ -1,10 +1,3 @@
-<head>
-<title>Banho de brutos em Limeira. Folheado a Ouro e Prata |Ipanema Folheados</title>
-<meta name="description" content="Banhamos suas peças nos milésimos e cor da sua preferência com opção de Verniz protetor Italiano. Processo Niquel-free garantido. Faça sua Cotação Online!>
-</head>
-
-<body>
-
 <div class="page-header">
   <h1>Serviço de Folheado a Ouro e Prata Ipanema</h1>
   <p class="lead">Banhamos sua mercadoria Bruta com os milésimos e cor da sua preferência<br>Também temos Venda de Peças Brutas e Folheadas!</p>
@@ -13,36 +6,36 @@
 <div class="container">
   <h2>Faça sua Cotação Online!</h2>
 
-  <h4><br>Cotação do ouro hoje: R$112</h4>
-  
-<div>
-  <label>Peso (gr):</label>
-  {{input type="text" value=weight placeholder="Peso (gr)"}}
-</div>
+  <h4><br>Cotação do ouro hoje: R${{goldPrice}}</h4>
 
-<div>
-  <label>Cor:</label>
-  {{view Ember.Select
-       contentBinding="colors"
-       valueBinding="color"
-  }}
-</div>
+  <div>
+    <label>Peso (gr):</label>
+    {{input type="text" value=weight placeholder="Peso (gr)"}}
+  </div>
 
-<div>
-  <label>Teor (mm):</label>
-  {{input type="text" value=goldContent placeholder="Teór (mm)"}}
-</div>
+  <div>
+    <label>Cor:</label>
+    {{view Ember.Select
+    contentBinding="colors"
+    valueBinding="color"
+    }}
+  </div>
 
-<div>
-  <label>
-    Verniz Italiano
-  </label>
-  {{view Ember.Checkbox checkedBinding="protector"}}
-</div>
+  <div>
+    <label>Teor (mm):</label>
+    {{input type="text" value=goldContent placeholder="Teór (mm)"}}
+  </div>
 
-<div class="text">
-  <h1>Preço: R${{price}} </h1>
-</div>
+  <div>
+    <label>
+      Verniz Italiano
+    </label>
+    {{view Ember.Checkbox checkedBinding="protector"}}
+  </div>
+
+  <div class="text">
+    <h1>Preço: R${{price}} </h1>
+  </div>
   <p>*Os preços variam de acordo com a cotação do ouro do dia</p>
 </div>
 
@@ -50,10 +43,10 @@
 
 <div class="container">
 
-{{#if submitted }}
+  {{#if submitted }}
   <h2> Obrigado! Entraremos em contato em breve</h2>
-{{else}}
-<h4>Para maiores informações, envie-nos seus dados e entraremos em contato o mais rápido possível!</h4>
+  {{else}}
+  <h4>Para maiores informações, envie-nos seus dados e entraremos em contato o mais rápido possível!</h4>
   <div class="input string">
     <label>Nome</label>
     {{view Ember.TextField valueBinding='client.name' name='name' viewName='nameField'}}
@@ -67,17 +60,15 @@
     {{view Ember.TextField valueBinding='client.email' name='email' viewName='emailField'}}
   </div>
   <button class="btn" {{action save}}>Enviar</button>
-{{/if}}
+  {{/if}}
 </div>
 <div class="container">
 
   <hr>
-  
+
   <div class=footer>
-<h4>Você também pode nos contatar através do e-mail <a href="mailto:contato@ipmfl.com">contato@ipmfl.com</a> ou no telefone <a href="tel:0411934447832">+55 19 34447832</h4>
+    <h4>Você também pode nos contatar através do e-mail <a href="mailto:contato@ipmfl.com">contato@ipmfl.com</a> ou no telefone <a href="tel:0411934447832">+55 19 34447832</a></h4>
 
-  <p><b>Endereço Ipanema Folheados</b><br>Avenida Ambrósio Fumagalli, 1735<br>Limeira-SP<br>13485-333<br>Brasil</p>
+    <p><b>Endereço Ipanema Folheados</b><br>Avenida Ambrósio Fumagalli, 1735<br>Limeira-SP<br>13485-333<br>Brasil</p>
+  </div>
 </div>
-</div>
-
-</body>
