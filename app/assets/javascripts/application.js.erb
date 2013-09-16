@@ -27,7 +27,7 @@ Atacado = Ember.Application.create({
   LOG_TRANSITIONS: true,
 });
 
-Atacado._VO = <%= GoldPrice.last.value %>;
+Atacado._VO = _AtacadoConf.GoldPrice;
 
 Atacado.Router.reopen({
  location: 'history'

@@ -5,6 +5,10 @@
   <meta name="description" content="Banhamos suas peças nos milésimos e cor da sua preferência com opção de Verniz protetor Italiano. Processo Niquel-free garantido. Faça sua Cotação Online!">
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
 
+  <script type="text/javascript">
+    _AtacadoConf = {};
+    _AtacadoConf.GoldPrice = <%= GoldPrice.last.value %>;
+  </script>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
